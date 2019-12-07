@@ -859,7 +859,7 @@ public final class AgentAtRuleMatcher
     {
       String capTouchScreen = (String) agent.getCapabilities().get(TrinidadAgent.CAP_TOUCH_SCREEN);
       if(capTouchScreen == null){
-        return fasle;
+        return false;
       }
       for (String touchCap : _touchCapabilities)
       {
